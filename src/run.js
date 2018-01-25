@@ -386,7 +386,6 @@ const minimalcss = async options => {
     })
   }
   allHrefs.forEach(href => {
-    href = redirectResponses[href] || href
     while (redirectResponses[href]) {
       href = redirectResponses[href]
     }
